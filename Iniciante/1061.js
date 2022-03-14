@@ -53,9 +53,15 @@ if(diaFim > diaInicio) {
     dia += 30 - (diaInicio - diaFim);
 }
 
+if(dia === 0 && hora === 0 && minuto === 0) {
+    segundo = 0;
+    minuto = 1;
+}
+
 console.log(`${dia} dia(s)`);
 console.log(`${hora} hora(s)`);
 console.log(`${minuto} minuto(s)`);
 console.log(`${segundo} segundo(s)`);
 
-// const [diaInicio, horaInicio, minutoInicio, segundoInicio, diaFim, horaFim, minutoFim, segundoFim] = [5,8,12,23,9,6,13,23];
+// CASE UDEBUG
+// const [diaInicio, horaInicio, minutoInicio, segundoInicio, diaFim, horaFim, minutoFim, segundoFim] = [5,8,12,23,5,9,12,22];
