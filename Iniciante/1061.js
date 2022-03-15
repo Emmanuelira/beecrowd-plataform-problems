@@ -36,6 +36,11 @@ if(minutoFim > minutoInicio) {
 } else if(minutoFim < minutoInicio) {
     --hora;
     minuto += 60 - (minutoInicio - minutoFim);
+} else {
+    if(minuto < 0) {
+        minuto = 59;
+        --hora;
+    }
 }
 
 // DEFININDO AS HORAS
@@ -44,6 +49,11 @@ if(horaFim > horaInicio) {
 } else if(horaFim < horaInicio) {
     --dia;
     hora += 24 - (horaInicio - horaFim);
+} else {
+    if(hora < 0) {
+        hora = 23;
+        --dia;
+    }
 }
 
 // DEFININDO OS DIAS
@@ -51,6 +61,10 @@ if(diaFim > diaInicio) {
     dia += diaFim - diaInicio;
 } else if(diaFim < diaInicio) {
     dia += 30 - (diaInicio - diaFim);
+} else {
+    if(dia < 0) {
+        dia = 29;
+    }
 }
 
 if(dia === 0 && hora === 0 && minuto === 0) {
@@ -62,6 +76,3 @@ console.log(`${dia} dia(s)`);
 console.log(`${hora} hora(s)`);
 console.log(`${minuto} minuto(s)`);
 console.log(`${segundo} segundo(s)`);
-
-// CASE UDEBUG
-// const [diaInicio, horaInicio, minutoInicio, segundoInicio, diaFim, horaFim, minutoFim, segundoFim] = [5,8,12,23,5,9,12,22];
