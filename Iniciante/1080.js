@@ -14,7 +14,7 @@ let posicaoMaior = 0;
 for(let indice in valores) {
     if(valores[indice] > maiorNumero) {
         maiorNumero = valores[indice];
-        posicaoMaior = indice + 1;
+        posicaoMaior = parseInt(indice) + 1;
     }
 }
 
