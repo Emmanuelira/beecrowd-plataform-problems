@@ -6,9 +6,9 @@ let z;
 
 let rodarPrograma = true;
 while(rodarPrograma) {
-    const input = parseInt(lines.shift());
-    if(input > x) {
-        z = input;
+    const ipt = parseInt(lines.shift());
+    if(ipt > x) {
+        z = ipt;
         rodarPrograma = false;
     }
 }
