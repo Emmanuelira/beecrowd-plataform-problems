@@ -1,6 +1,3 @@
-const input = require('fs').readFileSync('/dev/stdin', 'utf8');
-const lines = input.split('\n');
-
 let rodarPrograma = true;
 let numerador = 1;
 let denominador = 1;
