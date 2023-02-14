@@ -11,7 +11,11 @@ while(quantidadeCasos > 0) {
             valor = 1;
         }  
     } else {
-        // Executar código fibonacci
+        fib = [0, 1];
+        for(let i = 2; i <= posicao; i++) {
+            fib.push(fib[i-2] + fib[i-1]);
+        }
+        valor = fib[fib.length - 1];
     }
 
     console.log(`Fib(${posicao}) = ${valor}`);
