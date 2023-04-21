@@ -1,3 +1,13 @@
+/*
+Leia 3 valores inteiros e ordene-os em ordem crescente. No final, mostre os valores em ordem crescente, uma linha em branco e em seguida, os valores na sequência como foram lidos.
+
+Entrada
+A entrada contem três números inteiros.
+
+Saída
+Imprima a saída conforme foi especificado.
+*/
+
 const input = require('fs').readFileSync('/dev/stdin', 'utf8');
 const lines = input.split('\n');
 
